@@ -1,58 +1,56 @@
 ## 🩺 Project Overview
 
-**SwasthX** is a next-generation health-tech execution monitoring dashboard developed as part of the **AarogyaID** initiative. It is designed to bring visibility, efficiency, and simplicity to the document execution and review workflow in healthcare or diagnostics environments.
+**SwasthX** is a smart health-tech dashboard made under the **AarogyaID** project. It helps keep track of document executions and reviews in a clean, fast, and easy way – perfect for healthcare and diagnostics systems.
 
-At its core, SwasthX combines a clean and **visually appealing interface** with **robust backend services**, offering a full-stack solution for managing and monitoring document statuses in real-time.
-
-### ✨ Highlights:
-
-- 🔄 **Dynamic User Interface**: The platform features a beautifully animated and highly responsive home page with **arrow-based visual guides** that direct user attention, enhancing navigation and experience.
-  
-- 📄 **Monitor Dashboard**: A powerful dashboard that showcases all document executions in a neatly formatted and **paginated table** view. Each document includes details like:
-  - Execution ID
-  - File Name & Type
-  - Start & End Time
-  - Review Status
-  - Environment type (dev/prod)
-
-- 📊 **Live Overview Cards**: At the top of the dashboard, color-coded status cards provide a real-time snapshot of documents in **Pending**, **Completed**, and **Rejected** states—ideal for monitoring workflow progress.
-
-- 🖱️ **Interactive Sidebar Navigation**: Minimalist and icon-based sidebar for easy access, complete with a user profile avatar at the bottom.
-
-- ♻️ **Live Refresh with Timestamps**: Monitor data is auto-updatable via a refresh button that also displays the last update time.
-
-This project was built not only to demonstrate modern full-stack development but also to showcase a real-world health-monitoring system prototype that is scalable, maintainable, and UI-driven.
+This dashboard gives a smooth UI along with strong backend support. It's a full-stack project built to handle real-time monitoring of different types of document statuses.
 
 ---
 
-## 🧰 Tech Stack
+### ✨ What makes it cool:
+
+- 🔄 **Nice UI with animations** – The home page has smooth arrow animations and a modern look. Super user-friendly and looks fresh.
+
+- 📄 **Monitor Page** – Here you can see all the executions with full details like:
+  - Execution ID
+  - File Name and File Type
+  - Start and End Time
+  - Review Status
+  - Environment (dev or prod)
+
+- 📊 **Live Status Cards** – At the top of the monitor page, it shows counts of Pending, Completed, and Rejected documents in real-time.
+
+- 🖱️ **Minimal Sidebar** – Simple icon-based sidebar that looks clean. Profile image at the bottom too.
+
+- ♻️ **Auto Refresh & Timestamp** – You can refresh the data manually and also see the last time it got updated.
+
+---
+
+## 🧰 Tech Stack Used
 
 ### 🔹 Frontend
-- **React.js** – for interactive UI
-- **Tailwind CSS** – for styling
-- **React Icons** – for sidebar and action icons
-- **React Router DOM** – for routing
+- React.js
+- Tailwind CSS
+- React Icons
+- React Router DOM
 
 ### 🔸 Backend
-- **Node.js** with **Express.js** – for API handling
-- **MongoDB** with **Mongoose** – for document storage
-- **dotenv** – for environment variable management
-- **CORS & Middleware** – for API security and JSON handling
+- Node.js + Express.js
+- MongoDB + Mongoose
+- dotenv (for env variables)
+- CORS + Express middlewares
 
 ---
 
 ## 🚀 Features
 
-- 🏠 **Beautiful Animated Home Page** with smooth transitions and a dynamic UI
-- 🔽 **Interactive Arrow Animations** to guide users visually through the home interface
-- 📊 **Execution Dashboard** with real-time status cards (Pending, Completed, Rejected)
-- 📄 **Paginated Table** showing detailed document metadata
-- 🔁 **Live Refresh** with last updated timestamp
-- 📂 **Detailed Document View** - Can View the contents for the document as key-value pairs.
-
-- 🔐 **Backend API** with secure MongoDB database and RESTful endpoints
-
-
-**Made with ❤️ by VrajPatel (AarogyaID Project)**
+- 🏠 A really **good-looking animated Home Page** with cool transitions and arrows
+- ➡️ **Arrow animations** that guide the user through the homepage visually
+- 🖥️ A **monitor page** where all documents are listed with full status
+- 📋 **Table with pagination** – See document details neatly
+- 🔁 **Live refresh system** that shows the last updated time
+- 🔍 **Individual document view** – You can see all the fields in a key-value format
+- 🧠 Backend is built with proper REST APIs and MongoDB storage
 
 ---
+
+**Made with ❤️ by Vraj Patel – AarogyaID Project**
