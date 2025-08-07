@@ -49,8 +49,15 @@ This dashboard gives a smooth UI along with strong backend support. It's a full-
 - 📋 **Table with pagination** – See document details neatly
 - 🔁 **Live refresh system** that shows the last updated time
 - 🔍 **Individual document view** – You can see all the fields in a key-value format
-- 🧠 Backend is built with proper REST APIs and MongoDB storage
+- Backend is built with proper REST APIs and MongoDB storage
 
 ---
 
-**Made by Vraj Patel – AarogyaID Project**
+## Live Demo
+
+👉 [View Live on Vercel ( Frontend Deployment )](https://swasth-x.vercel.app/)
+
+👉 [Backend Deployment](https://swasthx-dy9y.onrender.com)
+
+
+### **Made by Vraj Patel – AarogyaID Project**
