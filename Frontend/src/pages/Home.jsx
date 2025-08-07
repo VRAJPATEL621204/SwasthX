@@ -45,7 +45,7 @@ function Home() {
                 {...(id !== "path6" && { strokeDasharray: "0.3" })}
               />
               <polygon points={`0,-${0.6 * scale} ${1 * scale},0 0,${0.6 * scale}`} fill="#3B82F6">
-                <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" begin="none">
+                <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" begin="0s">
                   <mpath href={`#${id}`} />
                 </animateMotion>
               </polygon>
