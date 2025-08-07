@@ -12,7 +12,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://swasth-x-47ic.vercel.app','https://swasth-x.vercel.app/'
+    'https://swasth-x-47ic.vercel.app','https://swasth-x.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
