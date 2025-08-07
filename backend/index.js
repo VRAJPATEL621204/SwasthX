@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', ''], // To Avoid the CORS issue.
+  origin: ['http://localhost:5173', 'https://charming-cupcake-cd84a5.netlify.app/'], // To Avoid the CORS issue.
   methods: ['GET'],
   credentials: true
 }));
