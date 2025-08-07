@@ -31,4 +31,7 @@
 
 - 🔐 **Backend API** with secure MongoDB database and RESTful endpoints
 
+
+**Made with ❤️ by VrajPatel (AarogyaID Project)**
+
 ---
