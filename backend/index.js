@@ -10,8 +10,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://swasth-x-47ic-n2gngci3g-vraj-patels-projects-0331c9ce.vercel.app'], // To Avoid the CORS issue.
-  methods: ['GET'],
+  origin: [
+    'http://localhost:5173',
+    'https://swasth-x-47ic.vercel.app'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
 
