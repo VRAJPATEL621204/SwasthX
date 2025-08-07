@@ -24,36 +24,35 @@ function Home() {
             <h2 className="text-3xl text-gray-600">Giving you access to your medical records, anytime, anywhere.</h2>
           </div>
 
-          {/*   SVG PATHS    */}
-          <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <defs>
-              <marker id="arrowhead" markerWidth="4" markerHeight="4" refX="0" refY="2" orient="auto">
-                <polygon points="0 0, 4 2, 0 4" fill="#3B82F6" />
-              </marker>
-            </defs>
-
-            {/* PATHS + Animated Polygons */}
-            {[
-              { id: "path1", d: "M8,38 L15,38 C30,40 11,52 38,51" },
-              { id: "path2", d: "M12.5,45 C29,47 10,52 40,51" },
-              { id: "path3", d: "M6,51.2 L39,51" },
-              { id: "path4", d: "M12,59 C28,56 10,50 42.3,51.3" },
-              { id: "path5", d: "M8,66 L18,66 C28,60 14,50 39,51" },
-              { id: "path6", d: "M50,50 C60,50 70,50 83,50", delay: "3s", scale: 1.6 }
-            ].map(({ id, d, delay = "0s", scale = 1 }) => (
-              <g key={id}>
-                <path id={id} d={d} stroke="#3B82F6" strokeWidth="0.1" fill="none" strokeDasharray="0.3" strokeLinecap="round" />
-                <polygon points={`0,-${0.6 * scale} ${1 * scale},0 0,${0.6 * scale}`} fill="#3B82F6">
-                  <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" begin={delay}>
-                    <mpath href={`#${id}`} />
-                  </animateMotion>
-                </polygon>
-              </g>
-            ))}
-          </svg>
+          {/* ==================== SVG PATHS ==================== */}
+          {[
+            { id: "path1", d: "M8,38 L15,38 C30,40 11,52 38,51" },
+            { id: "path2", d: "M12.5,45 C29,47 10,52 40,51" },
+            { id: "path3", d: "M6,51.2 L39,51" },
+            { id: "path4", d: "M12,59 C28,56 10,50 42.3,51.3" },
+            { id: "path5", d: "M8,66 L18,66 C28,60 14,50 39,51" },
+            { id: "path6", d: "M50,50 C60,50 70,50 83,50", delay: "3s", scale: 1.6 }
+          ].map(({ id, d, delay = "0s", scale = 1 }) => (
+            <g key={id}>
+              <path
+                id={id}
+                d={d}
+                stroke="#3B82F6"
+                strokeWidth="0.1"
+                fill="none"
+                strokeLinecap="round"
+                {...(id !== "path6" && { strokeDasharray: "0.3" })}
+              />
+              <polygon points={`0,-${0.6 * scale} ${1 * scale},0 0,${0.6 * scale}`} fill="#3B82F6">
+                <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" begin={delay}>
+                  <mpath href={`#${id}`} />
+                </animateMotion>
+              </polygon>
+            </g>
+          ))}
 
           
-          {/*   ICONS   */}
+          {/* ==================== ICONS ==================== */}
           <div className="absolute top-[35%] left-[4%] w-[3rem] h-[3rem] bg-white rounded-2xl shadow-2xl flex items-center justify-center">
             <img src={whatsapp} alt="WhatsApp" className="w-[2.5rem] h-[2.5rem]" />
           </div>
@@ -79,7 +78,7 @@ function Home() {
             <img src={phone} alt="Phone" className="w-[2.5rem] h-[2.5rem]" />
           </div>
 
-          {/*  CENTER CIRCLE  */}
+          {/* ==================== CENTER CIRCLE ==================== */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[20rem] h-[20rem] flex items-center justify-center text-center z-10 bg-white rounded-full">
             <svg className="w-full h-full overflow-visible" viewBox="0 0 100 100">
               <defs>
@@ -108,7 +107,7 @@ function Home() {
             </svg>
           </div>
 
-          {/*  PHONE SETUP */}
+          {/* ==================== PHONE MOCKUP ==================== */}
           <div className="absolute top-[50%] left-[76%] -translate-y-1/2 w-[12rem]">
             <img src={screen} alt="banner_mobile" className="w-full object-contain z-10 relative" />
             <div className="absolute top-[0.7rem] left-1/2 -translate-x-1/2 w-[4rem] h-[0.8rem] bg-black rounded-full z-30"></div>
@@ -122,7 +121,7 @@ function Home() {
         </div>
       </div>
 
-      {/*  TEXT CARDS  */}
+      {/* ==================== TEXT CARDS ==================== */}
       <div className="w-full px-4 pb-12 -mt-32 ">
         <div className="flex flex-col md:flex-row justify-around items-start w-full max-w-6xl space-y-10 md:space-y-0 md:space-x-4 mx-auto">
           {[
