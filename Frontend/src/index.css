@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+body{
+
+  @apply bg-gray-100
+  
+}
+
+ 
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(calc(-100% + 35%));
+  }
+}
+
+
+.scroll-loop {
+  animation: scrollLoop 20s linear infinite alternate;
+}
+
+
+
+
