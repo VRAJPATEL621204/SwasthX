@@ -25,7 +25,8 @@ function Home() {
           </div>
 
           {/* ==================== SVG PATHS ==================== */}
-          {[
+          <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      {[
             { id: "path1", d: "M8,38 L15,38 C30,40 11,52 38,51" },
             { id: "path2", d: "M12.5,45 C29,47 10,52 40,51" },
             { id: "path3", d: "M6,51.2 L39,51" },
@@ -50,6 +51,8 @@ function Home() {
               </polygon>
             </g>
           ))}
+
+          </svg>
 
           
           {/* ==================== ICONS ==================== */}
