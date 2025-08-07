@@ -18,6 +18,7 @@ export default function MonitorPage() {
 
   const fetchDocuments = async () => {
     const res = await fetch(`${import.meta.env.VITE_API_URL}/api/documents`);
+    console.log(import.meta.env.VITE_API_URL)
     const data = await res.json();
     setDocuments(data.data || []);
     setCurrentPage(1);
