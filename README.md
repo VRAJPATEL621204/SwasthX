@@ -53,4 +53,4 @@ This dashboard gives a smooth UI along with strong backend support. It's a full-
 
 ---
 
-**Made with ❤️ by Vraj Patel – AarogyaID Project**
+**Made by Vraj Patel – AarogyaID Project**
