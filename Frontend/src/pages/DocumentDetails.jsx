@@ -6,7 +6,7 @@ export default function DocumentDetails() {
   const [doc, setDoc] = useState(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/documents/${id}`)
       .then(res => res.json())
       .then(data => setDoc(data.data));
   }, [id]);
